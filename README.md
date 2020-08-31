@@ -1,4 +1,3 @@
-
 <p align="center" style="font-size: 26px">
 	<b>Typescript Boilerplate for alt:V</b>
 </p>
@@ -8,7 +7,7 @@
 
 ### Excerpt
 
-alt:V has a lot of Boilerplates for TypeScript. However, they all one missing feature in common. They fail to create an environment where you can support multiple resource compilations. This boilerplate aims to fix that and allow multiple resources to be compiled at once and even copies your `resource.cfg` files over.
+alt:V has a lot of Boilerplates for TypeScript. However, they have one feature missing. They fail to create an environment where you can support multiple resource compilations. This boilerplate aims to fix that and allow multiple resources to be compiled at once and support handle your mods, mlos, etc.
 
 ### Features
 
