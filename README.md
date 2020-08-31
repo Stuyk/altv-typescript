@@ -1,11 +1,10 @@
-<center >
-<span style="font-size: 26px">
-    Typescript Boilerplate for alt:V
-</span>
-<br />
-	[ [altv.mp](https://atlv.mp) | [stuyk.com](https://stuyk.com/) ]
-</center>
-<br />
+
+<p align="center" style="font-size: 26px">
+	<b>Typescript Boilerplate for alt:V<b/>
+</p>
+<p align="center" style="font-size: 26px">
+	[ <a href="https://altv.mp">altv.mp</a> | <a href="https://stuyk.com/">stuyk.com</a> ]
+</p>
 
 ### Excerpt
 
