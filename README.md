@@ -1,6 +1,6 @@
 
 <p align="center" style="font-size: 26px">
-	<b>Typescript Boilerplate for alt:V<b/>
+	<b>Typescript Boilerplate for alt:V</b>
 </p>
 <p align="center" style="font-size: 26px">
 	[ <a href="https://altv.mp">altv.mp</a> | <a href="https://stuyk.com/">stuyk.com</a> ]
