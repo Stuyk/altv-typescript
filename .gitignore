@@ -1,0 +1,9 @@
+node_modules
+altv-server
+resources
+.vscode
+*.dll
+*.exe
+update.json
+modules/
+data/
