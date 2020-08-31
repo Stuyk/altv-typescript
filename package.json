@@ -12,10 +12,6 @@
     },
     "author": "stuyk",
     "license": "ISC",
-    "dependencies": {
-        "@types/node": "^14.6.1",
-        "mongodb": "^3.6.0"
-    },
     "devDependencies": {
         "@altv/types-client": "^1.1.0",
         "@altv/types-natives": "^1.1.0",
@@ -23,6 +19,7 @@
         "@altv/types-webview": "^1.0.2",
         "@types/gulp": "^4.0.6",
         "@types/gulp-debug": "^2.0.31",
+        "@types/node": "^14.6.1",
         "altv-pkg": "^1.0.0",
         "gulp": "^4.0.2",
         "gulp-using": "^0.1.1",
