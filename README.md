@@ -15,6 +15,7 @@ alt:V has a lot of Boilerplates for TypeScript. However, they have one feature m
 -   Built in script auto-compilation through `npm run watch`.
 -   Built in auto-copy for non-typescript files.
 -   Built in handling of multiple resources for compilation.
+-   Built in server restart after compilation.
 -   Easily expandable resource directory.
 -   [altv-pkg](https://github.com/Stuyk/altv-pkg) support for auto-downloading alt:V Server Binaries.
 -   Prettier Configuration for code formatting.

@@ -1,6 +1,6 @@
 {
     "name": "altv-quickstart-ts",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "A Typescript Quickstart Repo for alt:V",
     "main": "",
     "scripts": {
@@ -25,7 +25,8 @@
         "gulp-using": "^0.1.1",
         "rimraf": "^3.0.2",
         "tsc-watch": "^4.2.9",
-        "typescript": "^4.0.2"
+        "typescript": "^4.0.2",
+        "fkill": "^7.0.1"
     },
     "type": "module"
 }
