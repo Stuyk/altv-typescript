@@ -8,22 +8,33 @@ import { spawn } from 'child_process';
 const __dirname = process.cwd();
 const config = JSON.parse(fs.readFileSync(path.join(__dirname, 'config.json')));
 
-console.log(`[TS] Beginning File Copy`);
+const copyFilesTask = new Promise(async (resolve) => {
+    console.log(`[TS] Beginning File Copy`);
 
-// cfg files
-const cfgSyntax = `./src/**/*.cfg`;
-gulp.src([path.join(__dirname, cfgSyntax)]).pipe(using({}));
-gulp.src([path.join(__dirname, cfgSyntax)]).pipe(gulp.dest(path.join(__dirname, '/resources')));
+    // cfg files
+    await new Promise((resolve) => {
+        const cfgSyntax = `./src/**/*.cfg`;
+        gulp.src([path.join(__dirname, cfgSyntax)]).pipe(using({}));
+        gulp.src([path.join(__dirname, cfgSyntax)])
+            .pipe(gulp.dest(path.join(__dirname, '/resources')))
+            .on('end', resolve);
+    });
 
-// src-copy directory
-const directorySyntax = './src-copy/**/*';
-gulp.src([path.join(__dirname, directorySyntax)]).pipe(using({}));
-gulp.src([path.join(__dirname, directorySyntax)]).pipe(gulp.dest(path.join(__dirname, '/resources')));
+    // src-copy directory
+    await new Promise((resolve) => {
+        const directorySyntax = './src-copy/**/*';
+        gulp.src([path.join(__dirname, directorySyntax)]).pipe(using({}));
+        gulp.src([path.join(__dirname, directorySyntax)])
+            .pipe(gulp.dest(path.join(__dirname, '/resources')))
+            .on('end', resolve);
+    });
 
-console.log(`[TS] Finished Copying Files`);
+    console.log(`[TS] Finished Copying Files`);
+    resolve();
+});
 
 if (config.restartServerAfterCopy) {
-    (async () => {
+    copyFilesTask.then(async () => {
         await fkill('altv-server.exe').catch((err) => {
             return;
         });
@@ -45,5 +56,5 @@ if (config.restartServerAfterCopy) {
             console.log(`Started Linux Server for alt:V`);
             spawn(`/bin/sh`, ['start.sh'], { detached: true, stdio: 'inherit' });
         }
-    })();
+    });
 }
