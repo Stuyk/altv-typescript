@@ -5,6 +5,12 @@
 	[ <a href="https://altv.mp">altv.mp</a> | <a href="https://stuyk.com/">stuyk.com</a> ]
 </p>
 
+[❤️ Become a Sponsor of my Open Source Work](https://github.com/sponsors/Stuyk/)
+
+[⌨️ Learn how to script for alt:V](https://stuyk.github.io/altv-javascript-guide/)
+
+⭐ This repository if you found it useful!
+
 ### Excerpt
 
 alt:V has a lot of Boilerplates for TypeScript. However, they have one feature missing. They fail to create an environment where you can support multiple resource compilations. This boilerplate aims to fix that and allow multiple resources to be compiled at once and all your mods.
