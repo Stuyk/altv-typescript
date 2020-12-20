@@ -7,7 +7,9 @@
         "build": "npm run clean && tsc && npm run copy",
         "copy": "copyfiles src/**/* --exclude=**/*.ts --up 1 ./resources",
         "clean": "rimraf resources",
-        "update": "altv-pkg d release"
+        "update": "altv-pkg d release",
+        "windows": "npm run build && altv-server.exe",
+        "linux": "npm run build && start.sh"
     },
     "author": "stuyk",
     "license": "ISC",
@@ -21,11 +23,9 @@
         "@types/node": "^14.6.1",
         "altv-pkg": "latest",
         "copyfiles": "^2.4.1",
-        "fkill": "^7.0.1",
         "gulp": "^4.0.2",
         "gulp-using": "^0.1.1",
         "rimraf": "^3.0.2",
-        "tsc-watch": "^4.2.9",
         "typescript": "^4.0.2"
     },
     "type": "module"

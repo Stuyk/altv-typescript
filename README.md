@@ -70,6 +70,24 @@ Based on your environment.
 
 <br />
 
+### Developer Mode
+
+In order to make things very simple. There are a few commands you can use while you're developing.
+
+They will automatically rebuild and start your server each time.
+
+#### Windows
+
+```
+npm run windows
+```
+
+#### Linux
+
+```
+npm run linux
+```
+
 **End Server Runtime**
 
 `ctrl + c` to kill your server.
