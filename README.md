@@ -13,7 +13,11 @@
 
 ### Excerpt
 
-alt:V has a lot of Boilerplates for TypeScript. However, they have one feature missing. They fail to create an environment where you can support multiple resource compilations. This boilerplate aims to fix that and allow multiple resources to be compiled at once and all your mods.
+alt:V has a lot of Boilerplates for TypeScript. However, they have one feature missing. 
+
+They fail to create an environment where you can support multiple resource compilations. 
+
+This boilerplate aims to fix that and allow multiple resources to be compiled at once and all your mods to be copied over and maintain folder hierarchy.
 
 ### Features
 
@@ -69,17 +73,3 @@ Based on your environment.
 **End Server Runtime**
 
 `ctrl + c` to kill your server.
-
-### src vs src-copy
-
-**src**
-
-This folder should be used to write your typescript based gamemodes.
-
-**src-copy**
-
-This folder should be used to copy car mods, mlos, etc. to your resources folder after compilation.
-
-Simply add your modded resources, resource dependencies, etc. into this folder.
-
-The build script will handle the rest.
