@@ -1,5 +1,5 @@
 <p align="center" style="font-size: 26px">
-	<b>Typescript Boilerplate for alt:V</b>
+	<b>Typescript Boilerplate for alt:V - v2.1.1</b>
 </p>
 <p align="center" style="font-size: 26px">
 	[ <a href="https://altv.mp">altv.mp</a> | <a href="https://stuyk.com/">stuyk.com</a> ]
@@ -18,7 +18,6 @@ alt:V has a lot of Boilerplates for TypeScript. However, they have one feature m
 ### Features
 
 -   Full alt:V Type Support for VSCode
--   Built in script auto-compilation through `npm run watch`.
 -   Built in auto-copy for non-typescript files.
 -   Built in handling of multiple resources for compilation.
 -   Built in server restart after compilation.
@@ -60,24 +59,6 @@ Start the Server
 Use any of the following commands to start it.
 
 Based on your environment.
-
-| Linux        | Windows (CMD)     | Windows (Powershell) |
-| ------------ | ----------------- | -------------------- |
-| `./start.sh` | `altv-server.exe` | `./altv-server.exe`  |
-
-<br />
-
-### Development Mode
-
-If you wish to work your game-mode simply open up VSCode. Open up a terminal and split it (`Ctrl + Shift + 5`).
-
-Run the following in a terminal:
-
-```sh
-npm run watch
-```
-
-Run your server in another terminal:
 
 | Linux        | Windows (CMD)     | Windows (Powershell) |
 | ------------ | ----------------- | -------------------- |
