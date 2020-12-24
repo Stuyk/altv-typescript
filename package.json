@@ -9,7 +9,7 @@
         "clean": "rimraf resources",
         "update": "altv-pkg d release",
         "windows": "npm run build && altv-server.exe",
-        "linux": "npm run build && start.sh"
+        "linux": "npm run build && ./start.sh"
     },
     "author": "stuyk",
     "license": "ISC",
