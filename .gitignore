@@ -9,3 +9,4 @@ modules/
 data/
 *.log
 cache/
+crashdumps/

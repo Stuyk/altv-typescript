@@ -10,17 +10,13 @@
         "allowJs": true,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
-        "module": "ESNext",
-        "target": "ESNext",
+        "module": "esNext",
+        "target": "esNext",
         "outDir": "./resources",
         "rootDir": "./src",
         "allowSyntheticDefaultImports": true,
+        "declaration": false
     },
     "include": ["./src/**/*.ts"],
-    "exclude": ["node_modules", "**/*.spec.ts", "resources", "**/*.json"],
-    "watchOptions": {
-        "watchFile": "useFsEvents",
-        "watchDirectory": "useFsEvents",
-        "fallbackPolling": "dynamicPriority"
-    }
+    "exclude": ["node_modules", "**/*.spec.ts", "resources", "**/*.json"]
 }

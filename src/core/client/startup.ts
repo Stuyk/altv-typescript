@@ -1,3 +1,7 @@
 import * as alt from 'alt-client';
 
-alt.log(`Hello from alt:V Client`);
+alt.onServer('log:Console', handleLogConsole);
+
+function handleLogConsole(msg: string) {
+    alt.log(msg);
+}
