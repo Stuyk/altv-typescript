@@ -1,4 +1,5 @@
 import * as alt from 'alt-server';
+import * as http from 'http';
 
 const SPAWN_POS = {
     x: 36.19486618041992,
@@ -16,3 +17,10 @@ function handlePlayerConnect(player: alt.Player) {
     player.spawn(SPAWN_POS.x, SPAWN_POS.y, SPAWN_POS.z, 0);
     alt.emitClient(player, 'log:Console', 'alt:V Server - Boilerplate Started');
 }
+
+// Used for an Auto-Reconnection Script.
+const req = http.get('http://localhost:9229/reconnect/debug');
+
+req.on('error', () => {
+    console.log(`[altv-reconnect] Probably Not Running Reconnection Script`);
+});

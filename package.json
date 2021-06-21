@@ -1,6 +1,6 @@
 {
     "name": "altv-quickstart-ts",
-    "version": "3.0.1",
+    "version": "3.0.2",
     "description": "The Fastest Typescript Quickstart Repo for alt:V",
     "main": "",
     "scripts": {
@@ -9,7 +9,8 @@
         "update": "altv-pkg d release",
         "windows": "npm run build && altv-server.exe",
         "linux": "npm run build && ./start.sh",
-        "dev": "nodemon --watch \"./src/**\" --ext \"ts\" --exec \"npm run build && altv-server.exe\""
+        "dev": "npm run reconnect | nodemon --watch \"./src/**\" --ext \"ts\" --exec \"npm run build && altv-server.exe\"",
+        "reconnect": "altv-reconnect"
     },
     "author": "stuyk",
     "license": "ISC",
@@ -19,6 +20,7 @@
         "@altv/types-server": "^1.9.1",
         "@altv/types-shared": "^1.0.1",
         "@altv/types-webview": "^1.0.2",
+        "@stuyk/altv-reconnect": "^1.2.0",
         "@swc/cli": "^0.1.46",
         "@swc/core": "^1.2.60",
         "@types/node": "^14.6.1",
