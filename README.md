@@ -1,5 +1,5 @@
 <p align="center" style="font-size: 26px">
-	<b>Typescript Boilerplate for alt:V - v3.0.2</b>
+	<b>Typescript Boilerplate for alt:V - v3.0.3</b>
 </p>
 <p align="center" style="font-size: 26px">
 	[ <a href="https://altv.mp">altv.mp</a> | <a href="https://stuyk.com/">stuyk.com</a> ]
@@ -24,6 +24,7 @@ A simple Typescript Boilerplate that builds incredibly fast using the [SWC Libra
 -   Built in handling of multiple resources for compilation.
 -   Built in server restart after compilation.
 -   Development mode for auto-restart of server.
+-   Development mode for auto-reconnection of client on server-start.
 -   Easily expandable resource directory.
 -   [altv-pkg](https://github.com/Stuyk/altv-pkg) support for auto-downloading alt:V Server Binaries.
 -   Prettier Configuration for code formatting.
