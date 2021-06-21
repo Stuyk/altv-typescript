@@ -19,7 +19,7 @@ function handlePlayerConnect(player: alt.Player) {
 }
 
 // Used for an Auto-Reconnection Script.
-const req = http.get('http://localhost:9229/reconnect/debug');
+const req = http.get('http://localhost:9229/reconnect');
 
 req.on('error', () => {
     console.log(`[altv-reconnect] Probably Not Running Reconnection Script`);
