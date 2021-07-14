@@ -1,11 +1,17 @@
 <p align="center" style="font-size: 26px">
-	<b>Typescript Boilerplate for alt:V - v3.0.3</b>
+	<b>Typescript Boilerplate for alt:V - v3.0.4</b>
 </p>
 <p align="center" style="font-size: 26px">
 	[ <a href="https://altv.mp">altv.mp</a> | <a href="https://stuyk.com/">stuyk.com</a> ]
 </p>
 
+<p align="center">
+	<img src="https://thumbs.gfycat.com/FabulousFlawlessLamb-size_restricted.gif" width="350" title="hover text">
+</p>
 
+<p align="center">
+	<sup>Super Fast Compilation & Auto Reconnection</sup>
+</p>
 
 [⌨️ Learn how to script for alt:V](https://altv.stuyk.com/)
 
@@ -20,14 +26,14 @@
 A simple Typescript Boilerplate that builds incredibly fast using the [SWC Library](https://github.com/swc-project/swc).
 
 -   Full alt:V Type Support for VSCode
+-   Development Mode with Super Fast Auto Reconnection
 -   Built in auto-copy for non-typescript files.
 -   Built in handling of multiple resources for compilation.
 -   Built in server restart after compilation.
--   Development mode for auto-restart of server.
--   Development mode for auto-reconnection of client on server-start.
 -   Easily expandable resource directory.
 -   [altv-pkg](https://github.com/Stuyk/altv-pkg) support for auto-downloading alt:V Server Binaries.
 -   Prettier Configuration for code formatting.
+
 
 # Installation
 
