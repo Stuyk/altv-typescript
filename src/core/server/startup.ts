@@ -1,5 +1,5 @@
 import * as alt from 'alt-server';
-import { invokeReconnection } from './utility/reconnect';
+import { ReconnectHelper } from './utility/reconnect';
 
 alt.log(`alt:V Server - Boilerplate Started`);
 alt.on('playerConnect', handlePlayerConnect);
@@ -14,4 +14,4 @@ function handlePlayerConnect(player: alt.Player) {
 
 // altv-reconnect function
 // Basically auto-reconnects you in the local environment with `debug: true`;
-invokeReconnection();
+ReconnectHelper.invoke();
