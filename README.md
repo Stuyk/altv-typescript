@@ -1,5 +1,5 @@
 <p align="center" style="font-size: 26px">
-	<b>Typescript Boilerplate for alt:V - v3.0.5</b>
+	<b>Typescript Boilerplate for alt:V - v4.0.0</b>
 </p>
 <p align="center" style="font-size: 26px">
 	[ <a href="https://altv.mp">altv.mp</a> | <a href="https://stuyk.com/">stuyk.com</a> ]
@@ -10,14 +10,14 @@
 </p>
 
 <p align="center">
-	<sup>Super Fast Compilation & Auto Reconnection</sup>
+	<sup>Super Fast Compilation</sup>
 </p>
 
 [⌨️ Learn how to script for alt:V](https://altv.stuyk.com/)
 
 [❤️ Become a Sponsor of my Open Source Work](https://github.com/sponsors/Stuyk/)
 
-[💡 Need a Roleplay Script? Try Athena!](https://gtavathena.com/)
+[💡 Need a Roleplay Script? Try Athena!](https://athenaframework.com/)
 
 ⭐ This repository if you found it useful!
 
@@ -26,7 +26,6 @@
 A simple Typescript Boilerplate that builds incredibly fast using the [SWC Library](https://github.com/swc-project/swc).
 
 -   Full alt:V Type Support for VSCode
--   Development Mode with Super Fast Auto Reconnection
 -   Built in auto-copy for non-typescript files.
 -   Built in handling of multiple resources for compilation.
 -   Built in server restart after compilation.
@@ -91,3 +90,7 @@ Based on your environment.
 ## End Server Runtime
 
 Use the key combination `ctrl + c` to kill your server in your terminal, command prompt, etc.
+
+## Where to Place Mods?
+
+You should place your mods in the `src` folder. This will retain mod information, structure, etc. and automatically copy it to the `resources` directory on change.

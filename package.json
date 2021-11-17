@@ -1,6 +1,6 @@
 {
     "name": "altv-quickstart-ts",
-    "version": "3.0.4",
+    "version": "4.0.0",
     "description": "The Fastest Typescript Quickstart Repo for alt:V",
     "main": "",
     "scripts": {
@@ -10,26 +10,24 @@
         "windows": "npm run build && altv-server.exe",
         "linux": "npm run build && ./start.sh",
         "windev": "nodemon --watch \"./src/**\" --ext \"ts\" --exec \"npm run build && altv-server.exe\"",
-        "reconnect-server": "altv-reconnect",
-        "dev": "npm run reconnect-server | npm run windev"
+        "dev": "npm run windev"
     },
     "author": "stuyk",
     "license": "ISC",
     "devDependencies": {
-        "@altv/types-client": "^1.7.6",
-        "@altv/types-natives": "^1.4.2",
-        "@altv/types-server": "^1.9.6",
-        "@altv/types-shared": "^1.0.1",
+        "@altv/types-client": "^1.9.4",
+        "@altv/types-natives": "^1.4.3",
+        "@altv/types-server": "^2.1.1",
+        "@altv/types-shared": "^1.1.0",
         "@altv/types-webview": "^1.0.2",
-        "@stuyk/altv-reconnect": "^1.5.0",
         "@swc/cli": "^0.1.46",
         "@swc/core": "^1.2.60",
         "@types/node": "^14.6.1",
-        "altv-pkg": "^1.1.0",
+        "altv-pkg": "^1.2.0",
         "nodemon": "^2.0.7",
         "rimraf": "^3.0.2",
         "tsup": "^4.11.2",
-        "typescript": "^4.3.2"
+        "typescript": "latest"
     },
     "prettier": {
         "tabWidth": 4,
