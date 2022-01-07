@@ -1,7 +1,7 @@
 {
     "name": "altv-quickstart-ts",
-    "version": "4.0.0",
-    "description": "The Fastest Typescript Quickstart Repo for alt:V",
+    "version": "4.1.0",
+    "description": "The Fastest Typescript Repo for alt:V",
     "main": "",
     "scripts": {
         "clean": "rimraf ./resources",
@@ -20,8 +20,8 @@
         "@altv/types-server": "^2.1.1",
         "@altv/types-shared": "^1.1.0",
         "@altv/types-webview": "^1.0.2",
-        "@swc/cli": "^0.1.46",
-        "@swc/core": "^1.2.60",
+        "@swc/cli": "^0.1.55",
+        "@swc/core": "^1.2.127",
         "@types/node": "^14.6.1",
         "altv-pkg": "^1.2.0",
         "nodemon": "^2.0.7",

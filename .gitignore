@@ -10,3 +10,4 @@ data/
 *.log
 cache/
 crashdumps/
+package-lock.json

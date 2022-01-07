@@ -1,10 +1,6 @@
 <p align="center" style="font-size: 26px">
-	<b>Typescript Boilerplate for alt:V - v4.0.0</b>
+	<b>Typescript Boilerplate for alt:V - v4.1.0</b>
 </p>
-<p align="center" style="font-size: 26px">
-	[ <a href="https://altv.mp">altv.mp</a> | <a href="https://stuyk.com/">stuyk.com</a> ]
-</p>
-
 <p align="center">
 	<img src="https://thumbs.gfycat.com/FabulousFlawlessLamb-size_restricted.gif" width="350" title="hover text">
 </p>
@@ -19,6 +15,8 @@
 
 [💡 Need a Roleplay Script? Try Athena!](https://athenaframework.com/)
 
+[🎮 alt:V Multiplayer for GTA:V](https://altv.mp)
+
 ⭐ This repository if you found it useful!
 
 # Features
@@ -32,6 +30,7 @@ A simple Typescript Boilerplate that builds incredibly fast using the [SWC Libra
 -   Easily expandable resource directory.
 -   [altv-pkg](https://github.com/Stuyk/altv-pkg) support for auto-downloading alt:V Server Binaries.
 -   Prettier Configuration for code formatting.
+-   Tried and tested and used by the Athena Framework for over 1 year.
 
 
 # Installation
@@ -44,7 +43,7 @@ A simple Typescript Boilerplate that builds incredibly fast using the [SWC Libra
 Use the command below in any terminal, command prompt, etc.
 
 ```sh
-git clone git@github.com:Stuyk/altv-typescript.git
+git clone https://github.com/Stuyk/altv-typescript
 ```
 
 
@@ -74,23 +73,38 @@ Use the command below in any terminal, command prompt, etc. This will build your
 npm run build
 ```
 
+## Start Production Server (Windows)
 
-## Start the Server
+Run this command to run the server in production mode.
 
-Use any of the following commands to start it.
+```
+npm run windows
+```
 
-Based on your environment.
+## Start Production Server (Linux)
 
-| Linux           		 | Windows           	  | Windows Development    |
-| ---------------------- | ---------------------- | ---------------------- |
-| `npm run linux` 		 | `npm run windows` 	  | `npm run dev`          |
+Run this command to run the server in production mode.
 
-<br />
+```
+npm run linux
+```
+
+## Start Developer Server (Windows)
+
+Run this command to run the server in development mode.
+
+```
+npm run dev
+```
 
 ## End Server Runtime
 
 Use the key combination `ctrl + c` to kill your server in your terminal, command prompt, etc.
 
-## Where to Place Mods?
+## How to Add Mods, and New Resources
 
-You should place your mods in the `src` folder. This will retain mod information, structure, etc. and automatically copy it to the `resources` directory on change.
+This quickstart repository for Typescript allows mods.
+
+However, **do not put your resources in the `resources` folder**.
+
+Instead you should put resources, mods, etc. in the `src` folder in their own folder. They will be automatically copied to the `resources` folder after the code is transpiled.
