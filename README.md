@@ -62,7 +62,7 @@ npm install
 
 ## Add the Package of your Database to the Project
 
-add one of the (listed packages)[https://typeorm.io/#installation] on from the TypeORM website.
+add one of the [listed packages](https://typeorm.io/#installation) on from the TypeORM website.
 
 
 ## Configure the Server.cfg
