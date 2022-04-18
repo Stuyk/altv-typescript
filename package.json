@@ -1,40 +1,46 @@
 {
-    "name": "altv-quickstart-ts",
-    "version": "4.1.0",
-    "description": "The Fastest Typescript Repo for alt:V",
-    "main": "",
-    "scripts": {
-        "clean": "rimraf ./resources",
-        "build": "npm run clean && swc ./src -d ./resources --copy-files",
-        "update": "altv-pkg d release",
-        "windows": "npm run build && altv-server.exe",
-        "linux": "npm run build && ./start.sh",
-        "windev": "nodemon --watch \"./src/**\" --ext \"ts\" --exec \"npm run build && altv-server.exe\"",
-        "dev": "npm run windev"
-    },
-    "author": "stuyk",
-    "license": "ISC",
-    "devDependencies": {
-        "@altv/types-client": "^2.1.1",
-        "@altv/types-natives": "^1.4.4",
-        "@altv/types-server": "^2.2.8",
-        "@altv/types-shared": "^1.2.1",
-        "@altv/types-webview": "^1.0.2",
-        "@swc/cli": "^0.1.55",
-        "@swc/core": "^1.2.127",
-        "@types/node": "^14.6.1",
-        "altv-pkg": "^1.2.0",
-        "nodemon": "^2.0.7",
-        "rimraf": "^3.0.2",
-        "tsup": "^4.11.2",
-        "typescript": "latest"
-    },
-    "prettier": {
-        "tabWidth": 4,
-        "semi": true,
-        "printWidth": 120,
-        "arrowParens": "always",
-        "singleQuote": true
-    },
-    "type": "module"
+	"name": "altv-quickstart-ts",
+	"version": "4.1.0",
+	"description": "The Fastest Typescript Repo for alt:V",
+	"main": "",
+	"scripts": {
+		"clean": "rimraf ./resources",
+		"build": "npm run clean && swc ./src -d ./resources --copy-files",
+		"update": "altv-pkg d release",
+		"windows": "npm run build && altv-server.exe",
+		"linux": "npm run build && ./start.sh",
+		"windev": "nodemon --watch \"./src/**\" --ext \"ts\" --exec \"npm run build && altv-server.exe\"",
+		"dev": "npm run windev"
+	},
+	"author": "stuyk x botis",
+	"license": "ISC",
+	"devDependencies": {
+		"@altv/types-client": "^2.1.4",
+		"@altv/types-natives": "^1.4.4",
+		"@altv/types-server": "^2.3.1",
+		"@altv/types-shared": "^1.2.3",
+		"@altv/types-webview": "^1.0.2",
+		"@swc/cli": "^0.1.55",
+		"@swc/core": "^1.2.127",
+		"@types/node": "^17.0.24",
+		"altv-pkg": "^1.2.0",
+		"nodemon": "^2.0.7",
+		"rimraf": "^3.0.2",
+		"tsup": "^4.11.2",
+		"typescript": "latest"
+	},
+	"prettier": {
+		"tabWidth": 4,
+		"semi": true,
+		"printWidth": 120,
+		"arrowParens": "always",
+		"singleQuote": true
+	},
+	"type": "module",
+	"dependencies": {
+		"cfg-reader": "^3.0.2",
+		"discord-webhook-node": "^1.1.8",
+		"reflect-metadata": "^0.1.13",
+		"typeorm": "^0.3.6"
+	}
 }
