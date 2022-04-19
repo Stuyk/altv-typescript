@@ -60,12 +60,12 @@ cd altv-typescript
 npm install
 ```
 
-## Add the Package of your Database to the Project
-
-add one of the [listed packages](https://typeorm.io/#installation) on from the TypeORM website.
+follow the [Installation steps](https://typeorm.io/#installation) (only step 4 is relevant 😉) from the TypeORM website.
 
 
-## Configure the Server.cfg
+## Configure the Repository
+
+
 
 ## Download Server Files
 
