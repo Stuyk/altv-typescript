@@ -60,11 +60,10 @@ cd altv-typescript
 npm install
 ```
 
-follow the [Installation steps](https://typeorm.io/#installation) (only step 4 is relevant 😉) from the TypeORM website.
+follow **only step 4** from the [TypeORM website](https://typeorm.io/#installation).
 
 
 ## Configure the Repository
-
 
 
 ## Download Server Files
