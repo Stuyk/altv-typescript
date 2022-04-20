@@ -65,11 +65,11 @@ follow **only step 4** from the [TypeORM website](https://typeorm.io/#installati
 ## Configure the Repository
 
 modify the server.cfg:
-- modify the wh_default for the Discord Webhook
+- modify the [wh_default](https://github.com/BotisDerG/altv-typescript-with-typeorm-and-webhook/blob/cb228b49dad086607e71e1191b9aff04982e4d4c/server.cfg#L25) for the Discord Webhook
 	- you can command the Line or just remove the Webhooklink if you dont want to use this
 - and fill out the Database Config so the Server can connect to your DB
-	- if you want to add a new Table or Column you just have to edit or add a new enity (under src/modules/db/entities and add it to the entities in the index.ts under src/modules/db)
-	- If you want to connect to a database type other than "mariadb", you must also edit the index.ts in the folder as before
+	- if you want to add a new Table or Column you just have to edit or add a new enity [here](https://github.com/BotisDerG/altv-typescript-with-typeorm-and-webhook/blob/cb228b49dad086607e71e1191b9aff04982e4d4c/src/core/server/modules/db/entities) (and add it to the entities in the index.ts [here](https://github.com/BotisDerG/altv-typescript-with-typeorm-and-webhook/blob/cb228b49dad086607e71e1191b9aff04982e4d4c/src/core/server/modules/db/index.ts#L15))
+	- If you want to connect to a database type other than "mariadb", you must also edit the index.ts [here](https://github.com/BotisDerG/altv-typescript-with-typeorm-and-webhook/blob/cb228b49dad086607e71e1191b9aff04982e4d4c/src/core/server/modules/db/index.ts#L9)
 
 ## Download Server Files
 
