@@ -32,7 +32,7 @@ A simple Typescript Boilerplate that builds incredibly fast using the [SWC Libra
 -   Prettier Configuration for code formatting.
 -   Tried and tested and used by the Athena Framework for over 1 year.
 
--   Examples how to user TypeORM for an AltV project
+-   Examples how to use TypeORM for an AltV project
 -   Examples for the use and implementation of a Discord webhook
 -   Examples of how to customize AltV's server.cfg to suit your needs
 
