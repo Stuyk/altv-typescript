@@ -62,9 +62,14 @@ npm install
 
 follow **only step 4** from the [TypeORM website](https://typeorm.io/#installation).
 
-
 ## Configure the Repository
 
+modify the server.cfg:
+- modify the wh_default for the Discord Webhook
+	- you can command the Line or just remove the Webhooklink if you dont want to use this
+- and fill out the Database Config so the Server can connect to your DB
+	- if you want to add a new Table or Column you just have to edit or add a new enity (under src/modules/db/entities and add it to the entities in the index.ts under src/modules/db)
+	- If you want to connect to a database type other than "mariadb", you must also edit the index.ts in the folder as before
 
 ## Download Server Files
 
