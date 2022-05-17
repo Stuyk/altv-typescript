@@ -11,7 +11,7 @@
         "linux": "npm run build && ./start.sh",
         "windev": "nodemon --watch \"./src/**\" --ext \"ts\" --exec \"npm run build && altv-server.exe\"",
         "dev": "npm run windev",
-        "reinstall": "rimraf node_modules"
+        "reinstall": "rimraf node_modules && npm install"
     },
     "author": "stuyk",
     "license": "ISC",
