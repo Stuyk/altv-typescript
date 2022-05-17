@@ -11,7 +11,7 @@
         "linux": "npm run build && ./start.sh",
         "windev": "nodemon --watch \"./src/**\" --ext \"ts\" --exec \"npm run build && altv-server.exe\"",
         "dev": "npm run windev",
-        "reinstall": "rimraf node_modules && npm install"
+        "reinstall": "rimraf node_modules"
     },
     "author": "stuyk",
     "license": "ISC",
@@ -24,7 +24,7 @@
         "@swc/cli": "^0.1.57",
         "@swc/core": "^1.2.186",
         "@types/node": "^14.6.1",
-        "altv-pkg": "^1.2.0",
+        "altv-pkg": "^2.0.3",
         "nodemon": "^2.0.16",
         "rimraf": "^3.0.2",
         "tsup": "^4.11.2",
