@@ -10,7 +10,8 @@
         "windows": "npm run build && altv-server.exe",
         "linux": "npm run build && ./start.sh",
         "windev": "nodemon --watch \"./src/**\" --ext \"ts\" --exec \"npm run build && altv-server.exe\"",
-        "dev": "npm run windev"
+        "dev": "npm run windev",
+        "reinstall": "rimraf node_modules && npm install"
     },
     "author": "stuyk",
     "license": "ISC",
@@ -20,11 +21,11 @@
         "@altv/types-server": "^2.2.8",
         "@altv/types-shared": "^1.2.1",
         "@altv/types-webview": "^1.0.2",
-        "@swc/cli": "^0.1.55",
-        "@swc/core": "^1.2.127",
+        "@swc/cli": "^0.1.57",
+        "@swc/core": "^1.2.186",
         "@types/node": "^14.6.1",
         "altv-pkg": "^1.2.0",
-        "nodemon": "^2.0.7",
+        "nodemon": "^2.0.16",
         "rimraf": "^3.0.2",
         "tsup": "^4.11.2",
         "typescript": "latest"
