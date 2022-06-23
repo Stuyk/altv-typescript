@@ -9,6 +9,9 @@
         "legacyDecorator": true,
         "decoratorMetadata": true
       },
-      "target": "es2016"
+      "target": "es2016",
+      "experimental": {
+        "keepImportAssertions": true
+      }
     }
 }
