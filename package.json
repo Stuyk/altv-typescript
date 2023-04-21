@@ -1,6 +1,6 @@
 {
     "name": "altv-quickstart-ts",
-    "version": "5.0.0",
+    "version": "5.0.1",
     "description": "TypeScript with alt:V Made Easy",
     "scripts": {
         "update": "altv-pkg d release",
