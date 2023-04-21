@@ -1,13 +1,29 @@
 announce = false
-debug = true
+
 description = 'test'
+website = 'test.com'
 gamemode = 'Freeroam'
-host = '0.0.0.0'
+
 language = 'en'
 modules = [ 'js-module' ]
 name = 'TestServer'
 players = 1024
 port = 7788
-resources = [ 'core' ]
 tags = [ 'customTag1', 'customTag2', 'customTag3', 'customTag4' ]
-website = 'test.com'
+
+resources = [ 
+    'core' 
+]
+
+# Turn this off in production mode
+debug = true
+
+# Leave host as 0.0.0.0, don't change it.
+host = '0.0.0.0'
+
+[js-module]
+global-webcrypto = true
+global-fetch = true
+
+[voice]
+bitrate = 64000
