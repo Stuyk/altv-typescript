@@ -23,7 +23,7 @@ A simple Typescript Boilerplate that builds incredibly fast using the [SWC Libra
 -   Auto Compile TypeScript Files
 -	Auto Download Resources
 -	Single Resource Code Support
-
+-	Fastest Auto Reconnect Time on Recompile
 
 # Installation
 

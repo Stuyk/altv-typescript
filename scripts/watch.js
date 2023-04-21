@@ -1,8 +1,9 @@
 
 import { spawnSync, spawn, ChildProcess } from 'node:child_process'
 import Watcher from 'watcher';
+import { writeToIpc, sleep } from './shared.js';
+
 const fileWatcher = new Watcher(['./src'], { recursive: true, renameDetection: true });
-const eventsToWatch = ['change', 'add', 'rename', 'unlink', 'unlinkDir', 'renameDir']
 const altvProcessName = process.platform === "win32" ? './altv-server.exe' : './altv-server'
 
 /** @type {ChildProcess} */
@@ -16,7 +17,9 @@ function compiler() {
     console.log(`Compile Complete`)
 }
 
-function reboot() {
+async function reboot() {
+    writeToIpc('kick-all');
+    await sleep(250);
     if (childProcess) {
         try {
             childProcess.kill();

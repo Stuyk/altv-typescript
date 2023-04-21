@@ -1,4 +1,6 @@
+import './utility/ipc'; // Used to reconnect, do not remove.
 import * as alt from 'alt-server';
+
 import { connectLocalClient } from './utility/reconnect';
 
 alt.log(`alt:V Server - Boilerplate Started`);
