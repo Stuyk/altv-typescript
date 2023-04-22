@@ -9,21 +9,21 @@
 	<sup>Super Fast Compilation</sup>
 </p>
 
-[🎮 alt:V Multiplayer for GTA:V](https://altv.mp)
-
 [💡 Need a Roleplay Script? Try Athena!](https://athenaframework.com/)
 
-⭐ This repository if you found it useful!
+# Variants
+
+- [TypeScript Boilerplate with Vue](https://github.com/Stuyk/altv-typescript-vue)
 
 # Features
 
 A simple Typescript Boilerplate that builds incredibly fast using the [SWC Library](https://github.com/swc-project/swc).
 
--   Auto Refresh Server
--   Auto Compile TypeScript Files
--	Auto Download Resources
--	Single Resource Code Support
--	Fastest Auto Reconnect Time on Recompile
+- Auto Refresh Server
+- Auto Compile TypeScript Files
+- Auto Download Resources
+- Single Resource Code Support
+- Fastest Auto Reconnect Time on Recompile
 
 # Installation
 
