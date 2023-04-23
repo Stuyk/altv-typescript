@@ -14,6 +14,7 @@
 # Variants
 
 - [TypeScript Boilerplate with Vue](https://github.com/Stuyk/altv-typescript-vue)
+- [TypeScript Boilerplate with React](https://github.com/Stuyk/altv-typescript-react)
 
 # Features
 
