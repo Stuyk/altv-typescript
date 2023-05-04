@@ -21,10 +21,13 @@ async function reboot() {
     writeToIpc('kick-all');
     await sleep(250);
     if (childProcess) {
-        try {
-            childProcess.kill();
-            await fkill(':7788')
-        } catch (err) { }
+        await fkill(':7788')
+
+        if (!childProcess.killed) {
+            try {
+                childProcess.kill();
+            } catch (err) { }
+        }
     }
 
     compiler();
