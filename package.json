@@ -1,6 +1,6 @@
 {
     "name": "altv-quickstart-ts",
-    "version": "5.0.1",
+    "version": "5.1.0",
     "description": "TypeScript with alt:V Made Easy",
     "scripts": {
         "update": "altv-pkg d release",
@@ -33,5 +33,8 @@
         "arrowParens": "always",
         "singleQuote": true
     },
-    "type": "module"
+    "type": "module",
+    "dependencies": {
+        "fkill": "^8.1.0"
+    }
 }
