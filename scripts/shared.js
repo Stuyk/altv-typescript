@@ -13,3 +13,7 @@ export async function sleep(ms) {
         setTimeout(resolve, ms);
     })
 }
+
+export const resources = [
+    "core",
+]
