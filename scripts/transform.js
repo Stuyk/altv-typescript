@@ -1,7 +1,7 @@
 import path from 'path';
 import * as glob from 'glob';
 import fs from 'fs';
-import { resources } from './shared.js';
+import { getResources } from './shared.js';
 
 /**
  * What does this do?
@@ -84,6 +84,6 @@ async function transformResource(name) {
     }
 }
 
-for (let resource of resources) {
+for (let resource of getResources()) {
     transformResource(resource);
 }

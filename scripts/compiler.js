@@ -1,7 +1,7 @@
 import fs from 'fs-extra'
 import * as glob from 'glob';
 import swc from '@swc/core'
-import { resources, normalizeFilePath } from './shared.js';
+import { getResources, normalizeFilePath } from './shared.js';
 
 const SWC_CONFIG = {
     jsc: {
@@ -39,6 +39,6 @@ async function buildTargetResource(name) {
     console.log(`[${name}] Has built ${compileCount} files in ${Date.now() - startTime}ms`)
 }
 
-for (let resource of resources) {
+for (let resource of getResources()) {
     buildTargetResource(resource);
 }

@@ -1,6 +1,6 @@
 import fs from 'fs-extra'
 import * as glob from 'glob';
-import { resources, normalizeFilePath } from './shared.js';
+import { getResources, normalizeFilePath } from './shared.js';
 
 async function copyResourceAssets(name) {
     const startTime = Date.now();
@@ -17,6 +17,6 @@ async function copyResourceAssets(name) {
     console.log(`[${name}] | ${filesCopied} Files Moved | ${Date.now() - startTime}ms`);
 }
 
-for (let resource of resources) {
+for (let resource of getResources()) {
     copyResourceAssets(resource);
 }
