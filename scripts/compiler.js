@@ -19,7 +19,7 @@ const SWC_CONFIG = {
     sourceMaps: false,
 };
 
-async function BuildTargetResource(name) {
+async function buildTargetResource(name) {
     const startTime = Date.now();
 
     if (fs.existsSync(`resources/${name}`)) {
@@ -40,5 +40,5 @@ async function BuildTargetResource(name) {
 }
 
 for (let resource of resources) {
-    BuildTargetResource(resource);
+    buildTargetResource(resource);
 }

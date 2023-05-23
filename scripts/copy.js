@@ -2,7 +2,7 @@ import fs from 'fs-extra'
 import * as glob from 'glob';
 import { resources, normalizeFilePath } from './shared.js';
 
-async function CopyResourceAssets(name) {
+async function copyResourceAssets(name) {
     const startTime = Date.now();
     const files = glob.sync(`./src/${name}/**/*.!(ts)`);
 
@@ -18,5 +18,5 @@ async function CopyResourceAssets(name) {
 }
 
 for (let resource of resources) {
-    CopyResourceAssets(resource);
+    copyResourceAssets(resource);
 }

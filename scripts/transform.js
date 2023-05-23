@@ -18,7 +18,7 @@ const funcsToIgnore = [
     '=>',
 ];
 
-async function TransformResource(name) {
+async function transformResource(name) {
     const resourcePath = path.join(process.cwd(), `resources/${name}/**/*.js`).replace(/\\/gm, '/');
     const filePaths = glob.sync(resourcePath);
 
@@ -85,5 +85,5 @@ async function TransformResource(name) {
 }
 
 for (let resource of resources) {
-    TransformResource(resource);
+    transformResource(resource);
 }
