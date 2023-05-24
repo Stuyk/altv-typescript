@@ -35,6 +35,7 @@
     },
     "type": "module",
     "dependencies": {
-        "fkill": "^8.1.0"
+        "fkill": "^8.1.0",
+        "toml": "^3.0.0"
     }
 }
