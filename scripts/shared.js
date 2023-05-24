@@ -16,8 +16,11 @@ export async function sleep(ms) {
 }
 
 function shouldCompileResource(name) {
-    const filePath = `./src/${name}/.nocompile`;
-    return !fs.existsSync(filePath);
+    const path = `./src/${name}`;
+    if (!fs.existsSync(path)) {
+        return false;
+    }
+    return !fs.existsSync(`${path}/.nocompile`);
 }
 
 let serverConfigPath = './server.toml';
