@@ -1,5 +1,5 @@
 <p align="center" style="font-size: 26px">
-	<b>Typescript Boilerplate for alt:V - v5.2.0</b>
+	<b>Typescript Boilerplate for alt:V - v5.2.1</b>
 </p>
 <p align="center">
 	<img src="https://thumbs.gfycat.com/FabulousFlawlessLamb-size_restricted.gif" width="350" title="hover text">
