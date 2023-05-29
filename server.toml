@@ -12,8 +12,8 @@ port = 7788
 tags = [ 'customTag1', 'customTag2', 'customTag3', 'customTag4' ]
 
 resources = [ 
-    'dbg_reconnect',
-    'core' 
+    'core',
+    'dbg_reconnect'
 ]
 
 # Turn this off in production mode
