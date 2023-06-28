@@ -1,10 +1,11 @@
 import * as alt from 'alt-server';
+import { Events } from '../../events';
 
 export abstract class Chat {
     private static cmdHandlers: { [cmd: string]: (player: alt.Player, args: string[]) => void } = {};
 
     static init() {
-        alt.onClient('chat:message', (player, msg) => {
+        alt.onClient(Events.chat.message, (player, msg) => {
             if (msg[0] === '/') {
                 msg = msg.trim().slice(1);
 
@@ -22,14 +23,14 @@ export abstract class Chat {
                 if (msg.length > 0) {
                     alt.log('[chat:msg] ' + player.name + ': ' + msg);
 
-                    alt.emitClient(player, 'chat:message', player.name, msg.replace(/</g, '&lt;').replace(/'/g, '&#39').replace(/"/g, '&#34'));
+                    alt.emitClient(player, Events.chat.message, player.name, msg.replace(/</g, '&lt;').replace(/'/g, '&#39').replace(/"/g, '&#34'));
                 }
             }
         });
     }
 
     static send(player: alt.Player, msg: string) {
-        alt.emitClient(player, 'chat:message', null, msg);
+        alt.emitClient(player, Events.chat.message, null, msg);
     }
 
     static registerCmd(cmd: string, callback: (player: alt.Player, args: string[]) => void) {

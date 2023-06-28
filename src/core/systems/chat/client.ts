@@ -1,4 +1,5 @@
 import * as alt from 'alt-client';
+import { Events } from '../../events';
 
 export abstract class Chat {
     private static buffer: Array<{ name: string; text: string }> = [];
@@ -20,14 +21,14 @@ export abstract class Chat {
         });
 
         this.view.on('chatmessage', (text) => {
-            alt.emitServer('chat:message', text);
+            alt.emitServer(Events.chat.message, text);
 
             this.opened = false;
             alt.toggleGameControls(true);
             this.view.unfocus();
         });
 
-        alt.onServer('chat:message', this.pushMessage);
+        alt.onServer(Events.chat.message, this.pushMessage);
 
         alt.on('keyup', (key) => {
             if (this.loaded) {
