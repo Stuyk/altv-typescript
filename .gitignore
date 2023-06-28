@@ -12,3 +12,4 @@ cache/
 crashdumps/
 package-lock.json
 ipc.txt
+.idea
