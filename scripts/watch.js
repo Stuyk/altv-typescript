@@ -12,7 +12,6 @@ let childProcess = undefined
 function compiler() {
     console.log(`Starting Compile`)
     spawnSync('node', ['./scripts/compiler.js'], { stdio: 'inherit' })
-    spawnSync('node', ['./scripts/transform.js'], { stdio: 'inherit' })
     spawnSync('node', ['./scripts/copy.js'], { stdio: 'inherit' })
     console.log(`Compile Complete`)
 }

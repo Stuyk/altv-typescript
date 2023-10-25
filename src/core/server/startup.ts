@@ -1,4 +1,5 @@
 import * as alt from 'alt-server';
+import * as secondFile from './secondFile.js'; // NOTE THE .js extension is required for file imports
 
 alt.log(`alt:V Server - Boilerplate Started`);
 alt.on('playerConnect', handlePlayerConnect);
