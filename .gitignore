@@ -6,6 +6,7 @@ resources
 *.exe
 update.json
 modules/
+.server-crashes-cache
 data/
 *.log
 cache/
