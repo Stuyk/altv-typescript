@@ -9,7 +9,9 @@
 	<sup>Super Fast Compilation</sup>
 </p>
 
-[💡 Need a Roleplay Script? Try Athena!](https://athenaframework.com/)
+> [!IMPORTANT]  
+> This boilerplate will no longer be updated.
+> Consider using [Rebar Framework](https://rebarv.com/) for more up-to-date practices, and a plugin system.
 
 # Variants
 
